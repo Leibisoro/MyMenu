@@ -1,5 +1,5 @@
 * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
-html, body { height:100%; background:#000; overflow:hidden; font-family:-apple-system,Helvetica,Arial,sans-serif; touch-action:none; }
+html, body { height:100dvh; background:#000; overflow:hidden; font-family:-apple-system,Helvetica,Arial,sans-serif; touch-action:none; }
 #container { position:absolute; top:0; left:0; width:100%; height:100%; }
 #container video { position:absolute !important; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:0 !important; }
 #container canvas { position:absolute; top:0; left:0; width:100%; height:100%; touch-action:none; z-index:1; }
@@ -51,12 +51,16 @@ html, body { height:100%; background:#000; overflow:hidden; font-family:-apple-s
 #pp-price { font-size:26px; font-weight:700; }
 
 @media (max-width: 480px) {
-  #panel-desc { width:52vw; top:10%; }
-  #panel-nutrition { width:48vw; top:34%; }
-  #panel-price { width:34vw; bottom:22%; }
-  .glass-panel { padding:12px 14px; }
-  .glass-panel h2 { font-size:13px; }
-  .glass-panel p { font-size:11px; }
+  #panel-desc { width:80vw; top:9%; }
+  #panel-nutrition { width:76vw; top:32%; }
+  #panel-price { width:58vw; bottom:20%; }
+  .glass-panel { padding:22px 24px; }
+  .glass-panel h2 { font-size:20px; }
+  .glass-panel h3 { font-size:16px; }
+  .glass-panel p { font-size:16px; }
+  .n-row { font-size:16px; }
+  #pp-price { font-size:28px; }
+  .n-icon { width:18px; height:18px; }
 }
 #hud { position:absolute; top:14px; left:14px; right:14px; display:flex; justify-content:space-between;
        font-size:12px; color:#fff; pointer-events:none; }
