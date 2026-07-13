@@ -189,7 +189,7 @@ async function showDish(index) {
   }
 
   currentIndex = index;
-  userRotY = 0; userRotX = 0; userZoom = 1;
+  userRotY = 0; userZoom = 1;
   applyUserTransform();
   [...dotsEl.children].forEach((d, i) => d.classList.toggle('active', i === index));
 }
@@ -197,13 +197,12 @@ function nextDish() { showDish((currentIndex + 1) % DISHES.length); }
 function prevDish() { showDish((currentIndex - 1 + DISHES.length) % DISHES.length); }
 
 // ================= Gestures =================
-let userRotY = 0, userRotX = 0, userZoom = 1;
+let userRotY = 0, userZoom = 1;
 let dragging = false, lastX = 0, lastY = 0, startX = 0, startY = 0, startT = 0;
 let pinchStartDist = null, pinchStartZoom = 1;
 
 function applyUserTransform() {
   userControl.rotation.y = userRotY;
-  userControl.rotation.x = userRotX;
   userControl.scale.setScalar(userZoom);
 }
 function dist2(t0, t1) { const dx = t0.clientX - t1.clientX, dy = t0.clientY - t1.clientY; return Math.sqrt(dx*dx + dy*dy); }
@@ -224,9 +223,8 @@ window.addEventListener('pointerup', e => {
 });
 window.addEventListener('pointermove', e => {
   if (!dragging) return;
-  const dx = e.clientX - lastX, dy = e.clientY - lastY;
+  const dx = e.clientX - lastX;
   userRotY += dx * 0.008;
-  userRotX = Math.max(-0.6, Math.min(0.6, userRotX + dy * 0.006));
   lastX = e.clientX; lastY = e.clientY;
   applyUserTransform();
 });
