@@ -268,6 +268,12 @@ function updateConnectors() {
   updateConnector(connPrice, panelPrice, 'tr', sx, sy);
 }
 
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
 (async () => {
   await showDish(0);
   await mindarThree.start();
