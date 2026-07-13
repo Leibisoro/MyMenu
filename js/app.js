@@ -5,23 +5,23 @@ import { MindARThree } from 'mindar-image-three';
 const DISHES = [
   { id: 'sushi', name: 'Salmon Sushi Roll', file: 'models/sushi.glb',
     desc: 'Fresh salmon, avocado, cucumber and sushi rice wrapped in seaweed. A perfect balance of flavor and freshness.',
-    nutrition: { cal: 320, protein: 18, carbs: 38, fat: 10, sugar: 3, sodium: 480 },
+    nutrition: { cal: 320, protein: 18, carbs: 38, fat: 10 },
     price: 12.99 },
   { id: 'ramen', name: 'Ramen Bowl', file: 'models/ramen.glb',
     desc: 'Rich tonkotsu broth with wheat noodles, soft-boiled egg, chashu pork and scallions.',
-    nutrition: { cal: 550, protein: 28, carbs: 65, fat: 18, sugar: 4, sodium: 980 },
+    nutrition: { cal: 550, protein: 28, carbs: 65, fat: 18 },
     price: 14.99 },
   { id: 'burger', name: 'Signature Burger', file: 'models/burger.glb',
     desc: 'Grilled beef patty, aged cheddar, caramelized onion and house sauce in a brioche bun.',
-    nutrition: { cal: 680, protein: 34, carbs: 42, fat: 38, sugar: 8, sodium: 890 },
+    nutrition: { cal: 680, protein: 34, carbs: 42, fat: 38 },
     price: 13.49 },
   { id: 'dimsum', name: 'Dim Sum Basket', file: 'models/dimsum.glb',
     desc: 'An assortment of steamed dumplings filled with shrimp, pork and vegetables.',
-    nutrition: { cal: 410, protein: 20, carbs: 46, fat: 14, sugar: 3, sodium: 720 },
+    nutrition: { cal: 410, protein: 20, carbs: 46, fat: 14 },
     price: 11.99 },
   { id: 'cake', name: 'Strawberry Cake', file: 'models/cake.glb',
     desc: 'Light sponge layered with fresh strawberries and whipped cream.',
-    nutrition: { cal: 390, protein: 5, carbs: 52, fat: 16, sugar: 34, sodium: 180 },
+    nutrition: { cal: 390, protein: 5, carbs: 52, fat: 16 },
     price: 8.99, scale: 0.75 },
 ];
 
@@ -37,8 +37,6 @@ const nCal = document.getElementById('n-cal');
 const nProtein = document.getElementById('n-protein');
 const nCarbs = document.getElementById('n-carbs');
 const nFat = document.getElementById('n-fat');
-const nSugar = document.getElementById('n-sugar');
-const nSodium = document.getElementById('n-sodium');
 const ppPrice = document.getElementById('pp-price');
 const svg = document.getElementById('connectors');
 const svgNS = 'http://www.w3.org/2000/svg';
@@ -182,8 +180,6 @@ async function showDish(index) {
   nProtein.textContent = d.nutrition.protein + ' g';
   nCarbs.textContent = d.nutrition.carbs + ' g';
   nFat.textContent = d.nutrition.fat + ' g';
-  nSugar.textContent = d.nutrition.sugar + ' g';
-  nSodium.textContent = d.nutrition.sodium + ' mg';
   ppPrice.textContent = '$' + d.price.toFixed(2);
 
   // re-trigger a quick stagger when switching dishes while already found
