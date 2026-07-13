@@ -37,7 +37,7 @@ html, body { height:100dvh; background:#000; overflow:hidden; font-family:-apple
 .anchor-dot[data-corner="tr"] { top:0; right:0; }
 
 #panel-desc { top:14%; left:5%; width:230px; }
-#panel-nutrition { top:38%; right:5%; width:220px; }
+#panel-nutrition { top:52%; right:5%; width:220px; }
 #panel-price { bottom:16%; left:5%; width:150px; }
 
 .n-row { display:flex; justify-content:space-between; align-items:center; font-size:12px;
@@ -52,7 +52,7 @@ html, body { height:100dvh; background:#000; overflow:hidden; font-family:-apple
 
 @media (max-width: 480px) {
   #panel-desc { width:68vw; top:7%; left:4%; }
-  #panel-nutrition { width:52vw; top:30%; right:4%; }
+  #panel-nutrition { width:52vw; top:44%; right:4%; }
   #panel-price { width:34vw; bottom:12%; left:4%; }
   .glass-panel { padding:12px 14px; }
   .glass-panel h2 { font-size:14px; margin-bottom:6px; }
