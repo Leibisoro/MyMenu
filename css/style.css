@@ -51,18 +51,19 @@ html, body { height:100dvh; background:#000; overflow:hidden; font-family:-apple
 #pp-price { font-size:26px; font-weight:700; }
 
 @media (max-width: 480px) {
-  #panel-desc { width:56vw; top:7%; left:4%; }
-  #panel-nutrition { width:58vw; top:28%; right:4%; }
-  #panel-price { width:38vw; bottom:10%; left:4%; }
-  .glass-panel { padding:14px 16px; }
-  .glass-panel h2 { font-size:15px; }
-  .glass-panel h3 { font-size:12px; }
-  .glass-panel p { font-size:12px; }
-  .n-row { font-size:12px; padding:5px 0; }
-  #pp-price { font-size:22px; }
-  .n-icon { width:14px; height:14px; }
-  .n-note { font-size:8px; margin-top:6px; }
+  #panel-desc { width:68vw; top:7%; left:4%; }
+  #panel-nutrition { width:52vw; top:30%; right:4%; }
+  #panel-price { width:34vw; bottom:12%; left:4%; }
+  .glass-panel { padding:12px 14px; }
+  .glass-panel h2 { font-size:14px; margin-bottom:6px; }
+  .glass-panel h3 { font-size:11px; }
+  .glass-panel p { font-size:11px; line-height:1.4; }
+  .n-row { font-size:11px; padding:4px 0; }
+  #pp-price { font-size:20px; }
+  .n-icon { width:13px; height:13px; }
+  .n-note { font-size:8px; margin-top:5px; }
 }
+
 
 #hud { position:absolute; top:14px; left:14px; right:14px; display:flex; justify-content:space-between;
        font-size:12px; color:#fff; pointer-events:none; }
