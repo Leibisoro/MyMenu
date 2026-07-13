@@ -52,7 +52,7 @@ html, body { height:100dvh; background:#000; overflow:hidden; font-family:-apple
 
 @media (max-width: 480px) {
   #panel-desc { width:68vw; top:7%; left:4%; }
-  #panel-nutrition { width:52vw; bottom:4%; right:4%; }
+  #panel-nutrition { width:52vw; bottom:11%; right:4%; }
   #panel-price { width:34vw; bottom:12%; left:4%; }
   .glass-panel { padding:12px 14px; }
   .glass-panel h2 { font-size:14px; margin-bottom:6px; }
@@ -71,9 +71,9 @@ html, body { height:100dvh; background:#000; overflow:hidden; font-family:-apple
            background:rgba(0,0,0,0.4); border:1px solid rgba(255,255,255,0.15); font-weight:600; }
 .lost { color:#ff8080; }
 .found { color:#5adc8c; }
-#hint { position:absolute; bottom:14px; left:0; right:0; text-align:center; color:rgba(255,255,255,0.55);
+#hint { position:absolute; bottom:10px; left:0; right:0; text-align:center; color:rgba(255,255,255,0.55);
         font-size:11px; pointer-events:none; letter-spacing:0.3px; }
 #loading { position:absolute; top:50%; left:0; right:0; text-align:center; color:#fff; font-size:13px; transform:translateY(-50%); }
-#dots { position:absolute; bottom:46px; left:0; right:0; display:flex; justify-content:center; gap:6px; pointer-events:none; }
+#dots { position:absolute; bottom:26px; left:0; right:0; display:flex; justify-content:center; gap:6px; pointer-events:none; }
 .dot { width:6px; height:6px; border-radius:50%; background:rgba(255,255,255,0.3); transition:background 0.25s; }
 .dot.active { background:#fff; }
