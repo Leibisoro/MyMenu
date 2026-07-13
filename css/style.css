@@ -51,17 +51,19 @@ html, body { height:100dvh; background:#000; overflow:hidden; font-family:-apple
 #pp-price { font-size:26px; font-weight:700; }
 
 @media (max-width: 480px) {
-  #panel-desc { width:80vw; top:9%; }
-  #panel-nutrition { width:76vw; top:32%; }
-  #panel-price { width:58vw; bottom:20%; }
-  .glass-panel { padding:22px 24px; }
-  .glass-panel h2 { font-size:20px; }
-  .glass-panel h3 { font-size:16px; }
-  .glass-panel p { font-size:16px; }
-  .n-row { font-size:16px; }
-  #pp-price { font-size:28px; }
-  .n-icon { width:18px; height:18px; }
+  #panel-desc { width:56vw; top:7%; left:4%; }
+  #panel-nutrition { width:58vw; top:28%; right:4%; }
+  #panel-price { width:38vw; bottom:10%; left:4%; }
+  .glass-panel { padding:14px 16px; }
+  .glass-panel h2 { font-size:15px; }
+  .glass-panel h3 { font-size:12px; }
+  .glass-panel p { font-size:12px; }
+  .n-row { font-size:12px; padding:5px 0; }
+  #pp-price { font-size:22px; }
+  .n-icon { width:14px; height:14px; }
+  .n-note { font-size:8px; margin-top:6px; }
 }
+
 #hud { position:absolute; top:14px; left:14px; right:14px; display:flex; justify-content:space-between;
        font-size:12px; color:#fff; pointer-events:none; }
 #status { padding:6px 14px; border-radius:20px; backdrop-filter:blur(10px);
